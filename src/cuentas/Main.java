@@ -10,7 +10,11 @@ public class Main {
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
-        try {
+        operativa_cuenta(cuenta1);
+    }
+
+	private static void operativa_cuenta(CCuenta cuenta1) {
+		try {
             cuenta1.retirar(2300);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
@@ -21,5 +25,5 @@ public class Main {
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
-    }
+	}
 }
