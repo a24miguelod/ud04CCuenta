@@ -1,4 +1,4 @@
-package cd.ud04;
+package cuentas;
 
 public class CCuenta {
 
